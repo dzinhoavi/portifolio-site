@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Davi (dzinhoavi) · Software Engineer</title>
+  <meta name="description" content="Portfólio de Davi (dzinhoavi), software engineer full-stack. Java, Python, C. Projetos, sobre mim e contato." />
+  <meta name="theme-color" content="#c8102e" />
+  <meta property="og:title" content="Davi (dzinhoavi) · Software Engineer" />
+  <meta property="og:description" content="Portfólio full-stack em estilo retrô. Take Your Heart." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&family=VT323&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ BOOT ============ -->
+  <div id="boot" aria-hidden="true">
+    <pre id="boot-log"></pre>
+    <p class="boot-skip" data-i18n="boot.skip">clique ou pressione qualquer tecla para pular</p>
+  </div>
+
+  <!-- ============ DESKTOP ============ -->
+  <main id="desktop">
+    <h1 class="sr-only">Davi (dzinhoavi): Software Engineer full-stack</h1>
+
+    <div class="wallpaper" aria-hidden="true">
+      <span class="wp-line wp-1">TAKE</span>
+      <span class="wp-line wp-2">YOUR</span>
+      <span class="wp-line wp-3">HEART</span>
+    </div>
+
+    <nav class="icons" aria-label="Atalhos">
+      <button class="icon" data-open="win-about">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="3" width="24" height="26" fill="#f2f0ec" stroke="#000" stroke-width="2"/><circle cx="16" cy="12" r="5" fill="#c8102e" stroke="#000" stroke-width="2"/><path d="M8 26c1-6 15-6 16 0" fill="#c8102e" stroke="#000" stroke-width="2"/></svg>
+        <span data-i18n="icon.about">Sobre mim</span>
+      </button>
+      <button class="icon" data-open="win-projects">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M2 8h11l3 3h14v17H2z" fill="#c8102e" stroke="#000" stroke-width="2"/><path d="M2 13h28" stroke="#000" stroke-width="2"/></svg>
+        <span data-i18n="icon.projects">Projetos</span>
+      </button>
+      <button class="icon" data-open="win-skills">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="5" width="28" height="20" fill="#111" stroke="#000" stroke-width="2"/><rect x="4" y="7" width="24" height="16" fill="#111" stroke="#c8102e" stroke-width="1"/><path d="M7 11l4 3-4 3M13 18h6" stroke="#f2f0ec" stroke-width="2" fill="none"/><rect x="10" y="26" width="12" height="3" fill="#f2f0ec" stroke="#000" stroke-width="2"/></svg>
+        <span data-i18n="icon.skills">Stack.exe</span>
+      </button>
+      <button class="icon" data-open="win-contact">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="7" width="26" height="18" fill="#f2f0ec" stroke="#000" stroke-width="2"/><path d="M3 7l13 11L29 7" fill="none" stroke="#c8102e" stroke-width="2"/></svg>
+        <span data-i18n="icon.contact">Contato</span>
+      </button>
+      <a class="icon" href="curriculo.pdf" target="_blank" rel="noopener">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 2h14l6 6v22H6z" fill="#f2f0ec" stroke="#000" stroke-width="2"/><path d="M20 2v6h6" fill="none" stroke="#000" stroke-width="2"/><rect x="9" y="12" width="14" height="5" fill="#c8102e"/><path d="M9 21h14M9 25h10" stroke="#000" stroke-width="2"/></svg>
+        <span data-i18n="icon.cv">Currículo.pdf</span>
+      </a>
+      <a class="icon" href="https://github.com/dzinhoavi" target="_blank" rel="noopener">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13" fill="#111" stroke="#000" stroke-width="2"/><path d="M12 26v-4c-3 1-4-1-5-2m5 2c0-2 0-3 1-4-4 0-6-2-6-6 0-1 .5-2.5 1.5-3.5C8 7 9 6.5 9 6.5S10.5 6.5 12 8c2.5-.7 5.5-.7 8 0 1.5-1.5 3-1.5 3-1.5s1 .5.5 2c1 1 1.5 2.5 1.5 3.5 0 4-2 6-6 6 1 1 1 2 1 4v4" fill="none" stroke="#f2f0ec" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>GitHub</span>
+      </a>
+    </nav>
+
+    <!-- ===== Welcome dialog ===== -->
+    <section class="window dialog" id="win-welcome" data-title-key="win.welcome" style="--x: 50%; --y: 14%;" data-center>
+      <header class="titlebar">
+        <span class="title" data-i18n="win.welcome">Bem-vindo</span>
+        <div class="controls"><button class="ctl ctl-close" aria-label="Fechar">×</button></div>
+      </header>
+      <div class="body welcome-body">
+        <div class="welcome-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><path d="M32 56 8 32a12 12 0 0 1 24-14 12 12 0 0 1 24 14z" fill="#c8102e" stroke="#000" stroke-width="3"/><path d="M20 26l6 6" stroke="#fff" stroke-width="3" stroke-linecap="square"/></svg>
+        </div>
+        <div>
+          <p class="welcome-hi" data-i18n="welcome.hi">Olá, eu sou o <strong>Davi</strong>.</p>
+          <p data-i18n="welcome.text">Software engineer full-stack. Este é o meu desktop: abra as pastas para conhecer meus projetos, minha stack e como falar comigo.</p>
+          <div class="btn-row">
+            <button class="btn btn-primary" data-open="win-projects" data-i18n="welcome.cta">Ver projetos</button>
+            <button class="btn" data-open="win-about" data-i18n="welcome.about">Sobre mim</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="window" id="win-about" hidden style="--x: 8%; --y: 8%; --w: 560px;">
+      <header class="titlebar">
+        <span class="title"><span data-i18n="win.about">Sobre mim</span>: C:\DAVI\README.TXT</span>
+        <div class="controls">
+          <button class="ctl ctl-min" aria-label="Minimizar">_</button>
+          <button class="ctl ctl-close" aria-label="Fechar">×</button>
+        </div>
+      </header>
+      <div class="menubar"><span data-i18n="menu.file">Arquivo</span><span data-i18n="menu.edit">Editar</span><span data-i18n="menu.help">Ajuda</span></div>
+      <div class="body">
+        <div class="about-grid">
+          <div class="avatar" aria-hidden="true">
+            <pre class="ascii">
+  ▄▄▄▄▄▄▄
+ █ ▀▄ ▄▀ █
+ █  ▄▄▄  █
+  ▀█▄▄▄█▀
+   DZINHO</pre>
+          </div>
+          <div>
+            <h2>Davi <span class="muted">@dzinhoavi</span></h2>
+            <p class="tag" data-i18n="about.role">Software Engineer · Full-stack</p>
+            <p data-i18n="about.p1">Estudante na Universidade Veiga de Almeida, construindo sistemas de ponta a ponta: da modelagem do banco de dados ao front-end que o usuário vê.</p>
+            <p data-i18n="about.p2">Gosto de pegar um problema real, organizar os requisitos e transformar isso em software que funciona. Quando não estou programando, estou jogando, ouvindo música ou vendo anime e filmes.</p>
+          </div>
+        </div>
+        <fieldset class="group">
+          <legend data-i18n="about.quick">Info rápida</legend>
+          <dl class="kv">
+            <dt data-i18n="about.k.study">Formação</dt><dd>Universidade Veiga de Almeida (UVA)</dd>
+            <dt data-i18n="about.k.focus">Foco</dt><dd data-i18n="about.v.focus">Full-stack, back-end e banco de dados</dd>
+            <dt data-i18n="about.k.langs">Linguagens</dt><dd>Java · Python · C</dd>
+            <dt data-i18n="about.k.ide">Ferramentas</dt><dd>VS Code · IntelliJ IDEA · Git</dd>
+            <dt data-i18n="about.k.hobbies">Fora do código</dt><dd data-i18n="about.v.hobbies">Jogos · Música · Animes · Filmes</dd>
+          </dl>
+        </fieldset>
+      </div>
+      <footer class="statusbar"><span>README.TXT</span><span data-i18n="status.ready">Pronto</span></footer>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="window" id="win-projects" hidden style="--x: 22%; --y: 6%; --w: 680px;">
+      <header class="titlebar">
+        <span class="title"><span data-i18n="win.projects">Projetos</span>: C:\DAVI\PROJETOS</span>
+        <div class="controls">
+          <button class="ctl ctl-min" aria-label="Minimizar">_</button>
+          <button class="ctl ctl-close" aria-label="Fechar">×</button>
+        </div>
+      </header>
+      <div class="menubar"><span data-i18n="menu.file">Arquivo</span><span data-i18n="menu.view">Exibir</span><span data-i18n="menu.help">Ajuda</span></div>
+      <div class="body projects">
+
+        <article class="project">
+          <div class="project-head">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><rect x="3" y="5" width="26" height="23" fill="#f2f0ec" stroke="#000" stroke-width="2"/><rect x="3" y="5" width="26" height="6" fill="#c8102e" stroke="#000" stroke-width="2"/><path d="M9 2v6M23 2v6" stroke="#000" stroke-width="2"/><path d="M9 18l3 3 6-6" stroke="#000" stroke-width="2.5" fill="none"/></svg>
+            </div>
+            <div>
+              <h3>SAP-Charitas</h3>
+              <p class="project-sub" data-i18n="p1.sub">Agendamento de eventos e lista de presença digital</p>
+            </div>
+            <span class="badge badge-wip" data-i18n="badge.wip">Em desenvolvimento</span>
+          </div>
+          <p data-i18n="p1.desc">Sistema web para o Charitas, a Casa de Cultura José de Dome, museu de Cabo Frio. O público agenda visitas e eventos com limite de vagas, registra presença por um formulário digital, e a administração acompanha tudo num dashboard com estatísticas mensais (por exemplo, qual mês teve mais visitas).</p>
+          <ul class="bullets">
+            <li data-i18n="p1.b1">Modelagem completa do banco de dados (brModelo → PostgreSQL)</li>
+            <li data-i18n="p1.b2">Banco hospedado no Supabase, com migrações versionadas</li>
+            <li data-i18n="p1.b3">Agendamento com controle de vagas e tela pública de eventos</li>
+            <li data-i18n="p1.b4">Atuei como Product Owner / Analista de Requisitos, organizando as sprints no Trello</li>
+          </ul>
+          <div class="chips"><span>Python</span><span>PostgreSQL</span><span>Supabase</span><span>HTML/CSS/JS</span><span>Scrum</span></div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M16 3 29 10v13L16 30 3 23V10z" fill="#5b3a1e" stroke="#000" stroke-width="2"/><path d="M16 3 29 10 16 17 3 10z" fill="#3fa34d" stroke="#000" stroke-width="2"/><path d="M16 17v13" stroke="#000" stroke-width="2"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="p2.title">Servidor Minecraft Fabric</h3>
+              <p class="project-sub" data-i18n="p2.sub">Infraestrutura em nuvem para um servidor modado 24/7</p>
+            </div>
+            <span class="badge badge-wip" data-i18n="badge.ongoing">Em andamento</span>
+          </div>
+          <p data-i18n="p2.desc">Planejamento e deploy de um servidor de Minecraft Fabric 26.3 com cerca de 220 mods. Comparei provedores (Google Cloud e Oracle Cloud Always Free), dimensionei a máquina para a carga dos mods e configurei a administração remota.</p>
+          <ul class="bullets">
+            <li data-i18n="p2.b1">VM Linux no Google Cloud (4 vCPU / 12 GB RAM) dimensionada para ~220 mods</li>
+            <li data-i18n="p2.b2">Avaliação de custo e capacidade entre provedores de nuvem</li>
+            <li data-i18n="p2.b3">Administração e atualização remota via SSH (Termius)</li>
+          </ul>
+          <div class="chips"><span>Linux</span><span>Google Cloud</span><span>SSH</span><span>Java</span><span>Fabric</span></div>
+        </article>
+
+        <a class="more" href="https://github.com/dzinhoavi" target="_blank" rel="noopener" data-i18n="projects.more">Ver mais no GitHub →</a>
+      </div>
+      <footer class="statusbar"><span data-i18n="status.objects">2 objeto(s)</span><span>C:\DAVI\PROJETOS</span></footer>
+    </section>
+
+    <!-- ===== Skills (terminal) ===== -->
+    <section class="window" id="win-skills" hidden style="--x: 40%; --y: 20%; --w: 520px;">
+      <header class="titlebar">
+        <span class="title">STACK.EXE: MS-DOS Prompt</span>
+        <div class="controls">
+          <button class="ctl ctl-min" aria-label="Minimizar">_</button>
+          <button class="ctl ctl-close" aria-label="Fechar">×</button>
+        </div>
+      </header>
+      <div class="body terminal">
+<pre><span class="p">C:\DAVI&gt;</span> stack --list
+<span class="h" data-i18n="term.langs">[ LINGUAGENS ]</span>
+  Java        <span class="bar">██████████████░░░░</span>
+  Python      <span class="bar">█████████████░░░░░</span>
+  C           <span class="bar">███████████░░░░░░░</span>
+  SQL         <span class="bar">████████████░░░░░░</span>
+  HTML/CSS/JS <span class="bar">██████████░░░░░░░░</span>
+
+<span class="h" data-i18n="term.data">[ DADOS &amp; INFRA ]</span>
+  PostgreSQL · Supabase · brModelo
+  Linux · Google Cloud · SSH
+
+<span class="h" data-i18n="term.tools">[ FERRAMENTAS ]</span>
+  VS Code · IntelliJ IDEA · Git · GitHub · Trello
+
+<span class="p">C:\DAVI&gt;</span> <span class="cursor">_</span></pre>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="window" id="win-contact" hidden style="--x: 30%; --y: 22%; --w: 460px;">
+      <header class="titlebar">
+        <span class="title"><span data-i18n="win.contact">Contato</span>: Outlook Express</span>
+        <div class="controls">
+          <button class="ctl ctl-min" aria-label="Minimizar">_</button>
+          <button class="ctl ctl-close" aria-label="Fechar">×</button>
+        </div>
+      </header>
+      <div class="body">
+        <p data-i18n="contact.text">Aberto a estágio, freelas e projetos. Manda uma mensagem!</p>
+        <ul class="contact-list">
+          <li>
+            <span class="c-label">E-mail</span>
+            <a href="mailto:davioviegas@gmail.com">davioviegas@gmail.com</a>
+            <button class="btn btn-sm" data-copy="davioviegas@gmail.com" data-i18n="contact.copy">Copiar</button>
+          </li>
+          <li>
+            <span class="c-label">GitHub</span>
+            <a href="https://github.com/dzinhoavi" target="_blank" rel="noopener">github.com/dzinhoavi</a>
+          </li>
+          <li>
+            <span class="c-label">LinkedIn</span>
+            <!-- TROQUE pelo seu link real do LinkedIn -->
+            <a href="https://www.linkedin.com/in/SEU-USUARIO" target="_blank" rel="noopener" id="linkedin-link">linkedin.com/in/SEU-USUARIO</a>
+          </li>
+          <li>
+            <span class="c-label" data-i18n="contact.cv">Currículo</span>
+            <a href="curriculo.pdf" target="_blank" rel="noopener" download data-i18n="contact.cvdl">Baixar PDF</a>
+          </li>
+        </ul>
+        <div class="btn-row right">
+          <a class="btn btn-primary" href="mailto:davioviegas@gmail.com" data-i18n="contact.send">Enviar e-mail</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ START MENU ============ -->
+  <div id="start-menu" hidden>
+    <div class="start-side"><span>dzinho<b>OS</b> 98</span></div>
+    <ul>
+      <li><button data-open="win-about"><span class="sm-ic">◉</span><span data-i18n="icon.about">Sobre mim</span></button></li>
+      <li><button data-open="win-projects"><span class="sm-ic">▣</span><span data-i18n="icon.projects">Projetos</span></button></li>
+      <li><button data-open="win-skills"><span class="sm-ic">▶</span><span data-i18n="icon.skills">Stack.exe</span></button></li>
+      <li><button data-open="win-contact"><span class="sm-ic">✉</span><span data-i18n="icon.contact">Contato</span></button></li>
+      <li class="sep" role="separator"></li>
+      <li><a href="curriculo.pdf" target="_blank" rel="noopener"><span class="sm-ic">▤</span><span data-i18n="icon.cv">Currículo.pdf</span></a></li>
+      <li><button id="btn-reboot"><span class="sm-ic">⏻</span><span data-i18n="start.reboot">Reiniciar...</span></button></li>
+    </ul>
+  </div>
+
+  <!-- ============ TASKBAR ============ -->
+  <footer id="taskbar">
+    <button id="start-btn" class="btn" aria-haspopup="true" aria-expanded="false">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14 2 8a3 3 0 0 1 6-3.5A3 3 0 0 1 14 8z" fill="#c8102e" stroke="#000"/></svg>
+      <span data-i18n="start">Iniciar</span>
+    </button>
+    <div id="task-list"></div>
+    <div class="tray">
+      <button id="lang-btn" class="lang" aria-label="Mudar idioma / Change language">PT</button>
+      <span id="clock">00:00</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
